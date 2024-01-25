@@ -1,0 +1,50 @@
+:root {
+  --color-purple-1: #f8f0fc;
+  --color-purple-2: #f3d9fa;
+  --color-purple-3: #eebefa;
+  --color-purple-4: #e599f7;
+  --color-purple-5: #da77f2;
+  --color-purple-6: #cc5de8;
+  --color-purple-7: #862e9c;
+
+  --color-blue-1: #e3fafc;
+  --color-blue-2: #c5f6fa;
+  --color-blue-3: #99e9f2;
+  --color-blue-4: #22b8cf;
+  --color-blue-5: #0b7285;
+
+  --color-grey-1: #f8f9fa;
+  --color-grey-2: #adb5bd;
+  --color-grey-3: #868e96;
+  --color-grey-4: #495057;
+  --color-grey-5: #212529;
+
+  --shadow-dark: 0 2rem 6rem rgb(0, 0, 0, 0.4);
+  --shadow-light: 0 2rem 5rem rgb(0, 0, 0, 0.6);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+body {
+  font-family: sans-serif;
+  color: var(--color-grey-5);
+  font-weight: 400;
+  line-height: 1.6;
+
+  background-image: linear-gradient(
+    to bottom right,
+    var(--color-purple-5),
+    var(--color-purple-2)
+  );
+  background-size: cover;
+  min-height: 150vh;
+}

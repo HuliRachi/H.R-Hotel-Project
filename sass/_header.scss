@@ -1,0 +1,155 @@
+.header {
+  &__nav {
+    background-color: var(--color-grey-1);
+    height: 8rem;
+    margin: 2rem 5rem 5rem 5rem;
+    display: flex;
+    align-items: center;
+
+    &__left-container {
+      display: flex;
+      align-items: center;
+      margin-right: auto;
+      margin-left: 3rem;
+      &__logo {
+        height: 4.5rem;
+      }
+      &__head {
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-left: 0.8rem;
+      }
+    }
+
+    &__right-container {
+      display: flex;
+      align-items: center;
+      gap: 3rem;
+      &__list {
+        text-decoration: none;
+        color: var(--color-grey-4);
+        font-size: 1.8rem;
+
+        &:hover {
+          border-bottom: 2px solid var(--color-purple-7);
+        }
+      }
+    }
+    &__btn {
+      margin-left: 4rem;
+      margin-right: 4rem;
+      text-decoration: none;
+      padding: 1rem 3rem;
+      color: var(--color-grey-1);
+      background-color: var(--color-blue-4);
+      font-size: 1.5rem;
+    }
+  }
+  &__main {
+    display: flex;
+    margin-left: 5rem;
+    margin-right: 5rem;
+
+    &__photo {
+      background-image: url(../img/hero-3.jpg);
+      background-size: cover;
+      width: 50rem;
+      height: 45rem;
+      position: relative;
+    }
+    &__content {
+      flex: 1;
+      margin: 0 10rem auto 4rem;
+      &__h3 {
+        text-transform: uppercase;
+        font-weight: 200;
+        font-size: 1.6rem;
+        color: var(--color-grey-1);
+        margin-bottom: 1.7rem;
+      }
+
+      &__h1 {
+        font-size: 4rem;
+        font-weight: 600;
+        color: var(--color-grey-5);
+        line-height: 5rem;
+        margin-bottom: 2rem;
+      }
+      &__paragraph {
+        font-size: 1.6rem;
+        color: var(--color-grey-4);
+      }
+      &__buttons {
+        margin-top: 4.5rem;
+        &__button1 {
+          text-decoration: none;
+          padding: 1rem 3rem;
+          background-color: var(--color-purple-7);
+          color: var(--color-grey-1);
+          font-size: 1.5rem;
+        }
+        &__button2 {
+          text-decoration: none;
+          margin-left: 10rem;
+          padding: 1rem 3rem;
+          background-color: var(--color-grey-1);
+          color: var(--color-purple-7);
+          font-size: 1.5rem;
+          border: 1px solid var(--color-purple-7);
+          box-sizing: border-box;
+        }
+      }
+      &__navbar {
+        background-color: var(--color-purple-1);
+        width: 70rem;
+        position: absolute;
+        right: 29%;
+        z-index: 20;
+        margin-top: 4rem;
+        display: flex;
+        align-items: center;
+
+        gap: 3rem;
+
+        &__big-container {
+          padding: 1rem;
+          &__small-container {
+            display: flex;
+            align-items: center;
+            &__head {
+              font-size: 1.4rem;
+              font-weight: 600;
+              color: var(--color-grey-5);
+            }
+            &__icon {
+              width: 3rem;
+              height: 3rem;
+              fill: var(--color-purple-7);
+            }
+          }
+          &__select {
+            font-size: 1.2rem;
+            color: var(--color-grey-5);
+          }
+        }
+        &__book {
+          text-decoration: none;
+          margin-left: auto;
+          color: var(--color-grey-1);
+          padding: 0.7rem 2rem;
+          background-color: var(--color-blue-4);
+          margin-right: 1.5rem;
+          font-size: 1.1rem;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}
+
+.underline {
+  border-bottom: 2px solid var(--color-purple-7);
+}
+.block {
+  display: block;
+}

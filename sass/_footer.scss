@@ -1,0 +1,19 @@
+.footer {
+  background-color: var(--color-blue-5);
+  height: 10rem;
+  text-align: center;
+  position: relative;
+  margin-top: 4rem;
+
+  &__container {
+    position: absolute;
+    bottom: 35%;
+    right: 22%;
+    width: 80rem;
+    &__copy-right {
+      font-size: 1.5rem;
+      font-weight: 200;
+      color: var(--color-grey-1);
+    }
+  }
+}
